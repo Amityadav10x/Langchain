@@ -20,7 +20,7 @@ print("--- Connecting to Hugging Face Shared Serverless Router ---")
 
 # 2. Use a model that is natively supported by the Serverless Providers
 llm = HuggingFaceEndpoint(
-    repo_id="meta-llama/Llama-3.1-8B-Instruct",  # 💡 FIX: Swapped to a fully supported, active serverless model
+    repo_id="meta-llama/Llama-3.1-8B-Instruct",  #
     task="text-generation",
     huggingfacehub_api_token=hf_token,
     max_new_tokens=512,
